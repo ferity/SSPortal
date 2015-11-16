@@ -26,8 +26,12 @@
     
     <div class="container">
 
-      <form action="" class="signin">
+      <form action="" class="form-signin">
         <h2 class="form-signin-heading">请登录</h2>
+        <label for="userName" class="sr-only">用户名</label>
+        <input id="userName" class="form-control" placeholder="请输入用户名" required autofocus type="text">
+        <label for="password"></label>
+        <input id="password" class="form-control" placeholder="密码" required type="password">
       </form>
       <div class="footer">
         <p><span class="glyphicon glyphicon-heart"></span> from the Yeoman team</p>
@@ -38,7 +42,6 @@
     <!-- build:js(.) scripts/vendor.js -->
     <!-- bower:js -->
     <script src="/bower_components/jquery/dist/jquery.js"></script>
-    <script src="/bower_components/knockout/dist/knockout.debug.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 
