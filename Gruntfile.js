@@ -236,7 +236,7 @@ module.exports = function (grunt) {
       options: {
         dest: '<%= config.dist %>'
       },
-      html: '<%= config.app %>/index.html'
+      html: '<%= config.app %>/*.html'
     },
 
     // Performs rewrites based on rev and the useminPrepare configuration
@@ -278,16 +278,16 @@ module.exports = function (grunt) {
     htmlmin: {
       dist: {
         options: {
-          collapseBooleanAttributes: true,
-          collapseWhitespace: true,
-          conservativeCollapse: true,
-          removeAttributeQuotes: true,
-          removeCommentsFromCDATA: true,
-          removeEmptyAttributes: true,
-          removeOptionalTags: true,
-          // true would impact styles with attribute selectors
-          removeRedundantAttributes: false,
-          useShortDoctype: true
+          // collapseBooleanAttributes: true,
+          // collapseWhitespace: true,
+          // conservativeCollapse: true,
+          // removeAttributeQuotes: true,
+          // removeCommentsFromCDATA: true,
+          // removeEmptyAttributes: true,
+          // removeOptionalTags: true,
+          // // true would impact styles with attribute selectors
+          // removeRedundantAttributes: false,
+          // useShortDoctype: true
         },
         files: [{
           expand: true,
